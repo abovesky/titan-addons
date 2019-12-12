@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace think\addons\middleware;
+namespace think\addons;
 
 use think\App;
 
-class Addons
+class Middleware
 {
     protected $app;
 

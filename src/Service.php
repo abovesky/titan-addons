@@ -9,7 +9,7 @@ use think\facade\Config;
 use think\facade\Lang;
 use think\facade\Cache;
 use think\facade\Event;
-use think\addons\middleware\Addons;
+use think\addons\Middleware;
 
 /**
  * 插件服务
@@ -44,7 +44,7 @@ class Service extends \think\Service
             $execute = '\\think\\addons\\Route::execute';
             // 注册控制器路由
             $route->rule("addons/:addon/[:controller]/[:action]", $execute)
-                ->middleware(Addons::class);
+                ->middleware(Middleware::class);
             // 自定义路由
             $routes = (array) Config::get('addons.route', []);
             foreach ($routes as $key => $val) {
