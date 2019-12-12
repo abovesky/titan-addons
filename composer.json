@@ -28,7 +28,7 @@
                 "think\\addons\\Service"
             ],
             "config":{
-                "addons": "src/config/addons.php"
+                "addons": "src/config.php"
             }
         }
     }
